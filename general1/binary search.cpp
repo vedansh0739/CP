@@ -18,3 +18,23 @@ bool isPerfectSquare(int num) {
         if(k*k==num)return true;
         return false;
 }
+
+
+
+
+//find min possible
+while(low <= high)
+        {
+            int mid = low + (high - low) / 2;
+            
+            if(is_possible(weights, mid, days))
+            {
+                mini = mid;
+                
+                high = mid - 1;
+            }
+            else
+            {
+                low = mid + 1;
+            }
+        }
