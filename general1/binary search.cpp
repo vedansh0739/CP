@@ -29,7 +29,7 @@ while(low <= high)
             
             if(is_possible(weights, mid, days))
             {
-                mini = mid;
+                minians = mid;
                 
                 high = mid - 1;
             }
