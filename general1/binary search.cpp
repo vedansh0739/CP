@@ -1,5 +1,5 @@
-int x = -1;
-for (int b = z; b >= 1; b /= 2) {
+ll x = -1;
+for (ll b = z; b >= 1; b /= 2) {
 while (!ok(x+b)) x += b;
 }
 int k = x+1;
