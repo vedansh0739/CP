@@ -15,7 +15,6 @@ using namespace std;
             isPrime[2] = true;
             for(int i = 3; i*i <=TOT ; i+=2) {
                 if(isPrime[i]){
-                    cout<<i;
                     for(int j = i*i; j <=TOT ; j+=i) {
                         isPrime[j] = false;
                     }
