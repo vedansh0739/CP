@@ -13,7 +13,8 @@ using namespace std;
             }
             isPrime[1] = false;
             isPrime[2] = true;
-            for(int i = 3; i*i <=TOT ; i+=2) {               //no need to anki this, anki the non- optimized version's forgettable wali line
+            for(int i = 3; i*i <=TOT ; i+=2) {               //no need to anki this, anki the non- optimized version's forgettable wali lines
+                    //(i.e., the lines which are not obvious when thinking about the algorithm in mind)
                 if(isPrime[i]){
                     for(int j = i*i; j <=TOT ; j+=i) {
                         isPrime[j] = false;
