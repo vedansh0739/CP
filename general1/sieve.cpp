@@ -4,7 +4,7 @@ using namespace std;
 
 
 
-        const int TOT = 1000000;
+        const int TOT = 100000;
         map<int,int> ar[TOT+1]; 
         void sieve(){
             int isPrime[TOT + 1];
