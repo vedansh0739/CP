@@ -5,8 +5,8 @@ using namespace std;
 
 
         const int TOT = 100000;
-        map<int,int> ar[TOT+1]; 
-        void sieve(){
+//         map<int,int> ar[TOT+1]; 
+        void sieve1(){
             int isPrime[TOT + 1];
             for(int i = 0; i <=TOT; ++i) {
                 isPrime[i] = i%2;
@@ -25,18 +25,18 @@ using namespace std;
                 if(isPrime[i]){
                     prime.push_back(i);
                 }
-            }
-            for(int i = 2; i <=TOT; ++i) {
-                int x = i;
-                for(int j = 0; j <prime.size() && prime[j] * prime[j]<=x; ++j) {
-                    while(x%prime[j]==0){
-                        ar[i][prime[j]]++;
-                        x/=prime[j];
-                    }
-                }
-                if(x>1){
-                    ar[i][x]++;
-                }
+//             }
+//             for(int i = 2; i <=TOT; ++i) {
+//                 int x = i;
+//                 for(int j = 0; j <prime.size() && prime[j] * prime[j]<=x; ++j) {
+//                     while(x%prime[j]==0){
+//                         ar[i][prime[j]]++;
+//                         x/=prime[j];
+//                     }
+//                 }
+//                 if(x>1){
+//                     ar[i][x]++;
+//                 }
             }
         }
 
@@ -46,7 +46,7 @@ using namespace std;
             ios_base::sync_with_stdio(false);
             cin.tie(nullptr);
             cout.tie(nullptr);
-            sieve();
+            sieve1();
         
         }
 
