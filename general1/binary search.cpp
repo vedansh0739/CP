@@ -1,4 +1,4 @@
-while(low<=high)
+while(low<=high)//anki
         {
             mid=(low+high)/2;
             if(ok(mid))
