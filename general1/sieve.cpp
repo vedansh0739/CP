@@ -13,7 +13,7 @@ using namespace std;
             }
             isPrime[1] = false;
             isPrime[2] = true;
-            for(int i = 3; i*i <=TOT ; i+=2) {
+            for(int i = 3; i*i <=TOT ; i+=2) {               //no need to anki this, anki the non- optimized version's forgettable wali line
                 if(isPrime[i]){
                     for(int j = i*i; j <=TOT ; j+=i) {
                         isPrime[j] = false;
