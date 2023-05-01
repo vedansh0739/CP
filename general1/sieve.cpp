@@ -25,7 +25,7 @@ int main()
         if(v[i])
         pri[++j]=i;
        }
-       for(i=1;i<=j;i+=100)
-      cout<<pri[i-1]<<"\n";
+            //there are 5000000 prime numbers in pri upto 90000000
+       
       return 0;
    }
