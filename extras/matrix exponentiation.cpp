@@ -88,19 +88,6 @@ void mul(ll A[][N],ll B[][N],ll m){
     rep(x,1,m)rep(y,1,m)A[x][y]=res[x][y];
 }
 
-void mul1(ll ar[][1],ll ia[][N],ll m){
-    ll res[m+1][m+1];
-    rep(i,1,m){
-        rep(j,1,m){
-            res[i][j]=0;
-            rep(k,1,m){
-                 res[i][j]=(res[i][j] % MOD + ((ar[i][k] % MOD) * (ia[k][j] % MOD) % MOD)) % MOD;
-            }
-        }
-    }
-    rep(x,1,m)rep(y,1,m)ia[x][y]=res[x][y];
-}
-
 void solve(){ 
 ll a,b,n;
 cin>>a>>b>>n;
